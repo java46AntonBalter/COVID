@@ -1,3 +1,4 @@
 {
-    "cacheInterval": 3600000
+    "cacheInterval": 3600000,
+    "statIntervals": [30, 60, 90, 180]   
 }
