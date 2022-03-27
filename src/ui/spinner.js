@@ -5,11 +5,9 @@ export default class Spinner {
 
     }
     start() {
-        this.#spinnerElem.classList.add('position-absolute', 'top-50', 'start-50', 'translate-middle');        
-        this.#spinnerElem.innerHTML = '<div class="spinner-border text-primary" style="width: 6rem; height: 6rem;" role="status"><span class="visually-hidden">Loading...</span></div>';
-    }
+        this.#spinnerElem.hidden = false;
+    } 
     stop() {
-        this.#spinnerElem.removeAttribute("class");
-        this.#spinnerElem.innerHTML = '';
+        this.#spinnerElem.hidden = true;
     }
 }
